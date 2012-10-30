@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1115,1127" id="brandon.gui" metadata="uml2-1.0" initialized="true" tag="1000" key="3230303530373138204272616E646F6E2F62726F6F6B73">
+  <children xsi:type="editmodel:ClassEditModel" name="ColorMapping" location="50,815" size="130,157" id="brandon.gui/ColorMapping" runTimeClassModel="color,theme,mutedColor,ColorMapping(ILjava.lang.String;Ljava.awt.Color;Ljava.awt.Color;Z),name,number">
+    <children xsi:type="editmodel:CompartmentEditModel" size="107,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="color" id="brandon.gui/ColorMapping#color"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mutedColor" id="brandon.gui/ColorMapping#mutedColor"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="brandon.gui/ColorMapping#name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="number" id="brandon.gui/ColorMapping#number"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="theme" id="brandon.gui/ColorMapping#theme"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="97,18">
+      <children xsi:type="editmodel:MethodEditModel" name="ColorMapping" id="brandon.gui/ColorMapping#ColorMapping(Ljava.lang.String;Ljava.awt.Color;Ljava.awt.Color;Z)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Animation" location="458,50" size="156,157" id="brandon.gui/Animation" runTimeClassModel="Animation(Lbrandon.gui.SpriteEnabled;),stopAnimation(I),stopAnimationThread(),startAnimation([Ljava.awt.Image;[IIII),stopAnimation(),run()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="133,108">
+      <children xsi:type="editmodel:MethodEditModel" name="Animation" id="brandon.gui/Animation#Animation(Lbrandon.gui.SpriteEnabled;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="run" id="brandon.gui/Animation#run()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="startAnimation" id="brandon.gui/Animation#startAnimation([Ljava.awt.Image;[IIII)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="stopAnimation" id="brandon.gui/Animation#stopAnimation(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="stopAnimation" id="brandon.gui/Animation#stopAnimation()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="stopAnimationThread" id="brandon.gui/Animation#stopAnimationThread()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="BufferedJPanel" location="567,815" size="157,85" id="brandon.gui/BufferedJPanel" runTimeClassModel="getBackgroundImage(),getBuffer()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="134,36">
+      <children xsi:type="editmodel:MethodEditModel" name="getBackgroundImage" id="brandon.gui/BufferedJPanel#getBackgroundImage()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBuffer" id="brandon.gui/BufferedJPanel#getBuffer()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Media" location="664,50" size="103,211" id="brandon.gui/Media" runTimeClassModel="getAudio(Ljava.lang.String;),getNames(),size(),Media(),get(Ljava.lang.String;),getImage(Ljava.lang.String;),add(Lbrandon.gui.MediaResource;),keySet(),getValues()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="80,162">
+      <children xsi:type="editmodel:MethodEditModel" name="Media" id="brandon.gui/Media#Media()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="add" id="brandon.gui/Media#add(Lbrandon.gui.MediaResource;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="get" id="brandon.gui/Media#get(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAudio" id="brandon.gui/Media#getAudio(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getImage" id="brandon.gui/Media#getImage(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNames" id="brandon.gui/Media#getNames()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getValues" id="brandon.gui/Media#getValues()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="keySet" id="brandon.gui/Media#keySet()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="size" id="brandon.gui/Media#size()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="StringManipulation" location="50,1040" size="161,67" id="brandon.gui/StringManipulation" runTimeClassModel="StringManipulation()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,18">
+      <children xsi:type="editmodel:MethodEditModel" name="StringManipulation" id="brandon.gui/StringManipulation#StringManipulation()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Sprite" location="410,815" size="107,175" id="brandon.gui/Sprite" runTimeClassModel="Sprite(IILjava.awt.Image;),width,height,y,image,x,number">
+    <children xsi:type="editmodel:CompartmentEditModel" size="84,108">
+      <children xsi:type="editmodel:AttributeEditModel" name="height" id="brandon.gui/Sprite#height"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="image" id="brandon.gui/Sprite#image"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="number" id="brandon.gui/Sprite#number"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="width" id="brandon.gui/Sprite#width"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="x" id="brandon.gui/Sprite#x"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="y" id="brandon.gui/Sprite#y"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="58,18">
+      <children xsi:type="editmodel:MethodEditModel" name="Sprite" id="brandon.gui/Sprite#Sprite(IILjava.awt.Image;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" name="SpriteEnabled" location="230,815" size="130,152" stereotype="interface" id="brandon.gui/SpriteEnabled" runTimeClassModel="removeSprite(I),drawSprites(),putSprite(ILbrandon.gui.Sprite;),addSprite(Lbrandon.gui.Sprite;),getSprites()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="95,90">
+      <children xsi:type="editmodel:MethodEditModel" name="addSprite" id="brandon.gui/SpriteEnabled#addSprite(Lbrandon.gui.Sprite;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="drawSprites" id="brandon.gui/SpriteEnabled#drawSprites()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSprites" id="brandon.gui/SpriteEnabled#getSprites()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="putSprite" id="brandon.gui/SpriteEnabled#putSprite(ILbrandon.gui.Sprite;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeSprite" id="brandon.gui/SpriteEnabled#removeSprite(I)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="AudioResource" location="274,260" size="137,175" id="brandon.gui/AudioResource" runTimeClassModel="stop(),AudioResource(Ljava.lang.String;Ljava.lang.String;),get(Ljavax.swing.JApplet;),load(Ljavax.swing.JApplet;),audioClip,play(),modify(Ljavax.swing.JApplet;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="114,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="audioClip" id="brandon.gui/AudioResource#audioClip"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="105,108">
+      <children xsi:type="editmodel:MethodEditModel" name="AudioResource" id="brandon.gui/AudioResource#AudioResource(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="get" location="-50,92" id="brandon.gui/AudioResource#get(Ljavax.swing.JApplet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="load" id="brandon.gui/AudioResource#load(Ljavax.swing.JApplet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="modify" id="brandon.gui/AudioResource#modify(Ljavax.swing.JApplet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="play" id="brandon.gui/AudioResource#play()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="stop" id="brandon.gui/AudioResource#stop()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="brandon.gui/MediaResource&lt;-brandon.gui/AudioResource" source="//@children.7" target="//@children.9/@sourceConnections.0" targetEnd="//@children.7/@sourceConnections.0/@children.1" sourceEnd="//@children.7/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="68,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.9/@sourceConnections.0" name="MediaResource" location="174,50" size="137,157" id="brandon.gui/MediaResource" runTimeClassModel="uRL,get(Ljavax.swing.JApplet;),load(Ljavax.swing.JApplet;),modify(Ljavax.swing.JApplet;),name,MediaResource(Ljava.lang.String;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="80,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="brandon.gui/MediaResource#name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="uRL" id="brandon.gui/MediaResource#uRL"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="107,72">
+      <children xsi:type="editmodel:MethodEditModel" name="MediaResource" id="brandon.gui/MediaResource#MediaResource(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="get" id="brandon.gui/MediaResource#get(Ljavax.swing.JApplet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="load" id="brandon.gui/MediaResource#load(Ljavax.swing.JApplet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="modify" id="brandon.gui/MediaResource#modify(Ljavax.swing.JApplet;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.10/@sourceConnections.0" name="ImageResource" location="50,257" size="191,301" id="brandon.gui/ImageResource" runTimeClassModel="highlightedAndRotated(I),type,get(Ljavax.swing.JApplet;),rotated(I),inactiveImage,ImageResource(Ljava.lang.String;Ljava.lang.String;),rotatedImage,inactive(),highlighted(),regular(),ImageResource(Ljava.lang.String;Ljava.lang.String;I),load(Ljavax.swing.JApplet;),image,modify(Ljavax.swing.JApplet;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="168,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="image" id="brandon.gui/ImageResource#image"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="inactiveImage" id="brandon.gui/ImageResource#inactiveImage"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rotatedImage" id="brandon.gui/ImageResource#rotatedImage"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="type" id="brandon.gui/ImageResource#type"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="138,180">
+      <children xsi:type="editmodel:MethodEditModel" name="ImageResource" id="brandon.gui/ImageResource#ImageResource(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ImageResource" id="brandon.gui/ImageResource#ImageResource(Ljava.lang.String;Ljava.lang.String;Lbrandon.gui.ImageResource.ImageType;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="get" id="brandon.gui/ImageResource#get(Ljavax.swing.JApplet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="highlighted" id="brandon.gui/ImageResource#highlighted()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="highlightedAndRotated" id="brandon.gui/ImageResource#highlightedAndRotated(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="inactive" id="brandon.gui/ImageResource#inactive()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="load" id="brandon.gui/ImageResource#load(Ljavax.swing.JApplet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="modify" id="brandon.gui/ImageResource#modify(Ljavax.swing.JApplet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="regular" id="brandon.gui/ImageResource#regular()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="rotated" id="brandon.gui/ImageResource#rotated(I)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.7/@sourceConnections.0" autoLocated="true" id="brandon.gui/MediaResource&lt;-brandon.gui/ImageResource" source="//@children.9" target="//@children.8" targetEnd="//@children.9/@sourceConnections.0/@children.1" sourceEnd="//@children.9/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="95,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="68,157" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MultiImageResource" location="61,608" size="169,157" id="brandon.gui/MultiImageResource" runTimeClassModel="numFrames(),regular(I),MultiImageResource(Ljava.lang.String;Ljava.lang.String;),MultiImageResource(Ljava.lang.String;Ljava.lang.String;I),numFrames,modify(Ljavax.swing.JApplet;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="95,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="numFrames" id="brandon.gui/MultiImageResource#numFrames"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="130,90">
+      <children xsi:type="editmodel:MethodEditModel" name="MultiImageResource" id="brandon.gui/MultiImageResource#MultiImageResource(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="MultiImageResource" id="brandon.gui/MultiImageResource#MultiImageResource(Ljava.lang.String;Ljava.lang.String;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="modify" id="brandon.gui/MultiImageResource#modify(Ljavax.swing.JApplet;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="numFrames" id="brandon.gui/MultiImageResource#numFrames()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="regular" id="brandon.gui/MultiImageResource#regular(I)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="brandon.gui/ImageResource&lt;-brandon.gui/MultiImageResource" source="//@children.10" target="//@children.9" targetEnd="//@children.10/@sourceConnections.0/@children.1" sourceEnd="//@children.10/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="84,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="95,301"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="10,10" gridOrigin="0,0" rulerUnit="pixel">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" showInterfaceStereotype="true" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

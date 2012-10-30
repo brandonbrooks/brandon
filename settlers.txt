@@ -1,0 +1,60 @@
+        // Draw icons of players waiting
+        if (game.getGameMode().equals(SettlersGame.Mode.NotStarted)) {
+            bufferG.setColor(SettlersColorList.settlersBackground);
+            bufferG.fillRect(0,0, width, height);
+            bufferG.setColor(Color.black);
+            bufferG.setFont(playerActiveFont);
+            bufferG.drawString("Players waiting...", 10, 20);
+            
+            Vector<SettlersPlayer> players = game.getPlayers();
+            int numPlayers = players.size();
+            int x[] = new int[numPlayers];
+            int y[] = new int[numPlayers];
+            int iconSize = 32;
+            switch (numPlayers) {
+                case 0: break;
+                case 1: // Only one player - place icon in center
+                        iconSize = (height / 4);
+                        x[0] = (width / 2); y[0] = (height / 2); break;
+                case 2: // Two players: place icons in vertical line
+                        iconSize = (height / 6);
+                         x[0] = (width / 2); y[0] = (height / 3);
+                         x[1] = (width / 2); y[1] = 2 * (height / 3); break;
+                case 3: // Three players: place icons in triangle
+                        iconSize = (height / 6);
+                         x[0] = (width / 2); y[0] = (height / 3);
+                         x[1] = (width / 3); y[1] = 2 * (height / 3);
+                         x[2] = 2 * (width / 3); y[2] = 2 * (height / 3); break;
+                case 4: // Four players: place icons in diamond
+                        iconSize = (height / 6);
+                         x[0] = (width / 2); y[0] = (height / 4);
+                         x[1] = (width / 3); y[1] = 2 * (height / 4);
+                         x[2] = 2 * (width / 3); y[2] = 2 * (height / 4);
+                         x[3] = (width / 2); y[3] = 3 * (height / 4); break;
+                case 5: // Five players: place icons in circle w/o bottom
+                    iconSize = (height / 6);
+                    x[0] = (width / 2); y[0] = (height / 5);
+                    x[1] = (width / 3); y[1] = 2 * (height / 5);
+                    x[2] = (width / 3); y[2] = 3 * (height / 5);
+                    x[3] = 2 * (width / 3); y[3] = 2 * (height / 5);
+                    x[4] = 2 * (width / 3); y[4] = 3 * (height / 5); break;
+                case 6: // Six players: place icons in circle
+                    iconSize = (height / 6);
+                    x[0] = (width / 2); y[0] = (height / 5);
+                    x[1] = (width / 3); y[1] = 2 * (height / 5);
+                    x[2] = (width / 3); y[2] = 3 * (height / 5);
+                    x[3] = 2 * (width / 3); y[3] = 2 * (height / 5);
+                    x[4] = 2 * (width / 3); y[4] = 3 * (height / 5);
+                    x[5] = (width / 2); y[5] = 4 * (height / 5); break;
+                default: break;
+            }
+            
+            int i = 0;
+            for(SettlersPlayer player : players) {
+                bufferG.drawImage(media.getImage(player.getIcon()).regular(),x[i] - (iconSize / 2),
+                        y[i] - (iconSize / 2), null);
+                bufferG.setColor(Color.black);
+                bufferG.setFont(playerInactiveFont);
+                bufferG.drawString(player.getName(), x[i] - (iconSize / 2), y[i] + iconSize + 12);
+                i++;
+            }
