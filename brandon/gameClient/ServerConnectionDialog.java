@@ -12,7 +12,7 @@ import brandon.utils.Log;
 
 /** Shows a dialog box which queries to which server we should
  *  connect to. In addition, asks for proxy name and port if necessary.
- *  This dialog box is also smart enough to not come up if it's not needed
+ *  This dialog box is also smart enough stay hidden if it's not needed
  */
 public class ServerConnectionDialog implements ActionListener {
 	public final static int WIDTH = 400;
@@ -32,10 +32,10 @@ public class ServerConnectionDialog implements ActionListener {
 	private String[] data;
 	
 	private String serverName;
-	private String useProxy = "no";
+	private boolean useProxy = false;
 	private String proxyName = null;
 	private String proxyPort = null;
-	private String remember = null;
+	private boolean remember = false;
 	
 	private boolean finished = false;
 	
@@ -67,8 +67,23 @@ public class ServerConnectionDialog implements ActionListener {
 			proxyPort = map.get("proxyport");
 			if (proxyPort == null) { proxyPort = ""; }
 			
-			useProxy = map.get("proxy");
-			if (useProxy == null) { useProxy = "no"; }
+			
+			switch((map.get("proxy") == null) ? "no" : map.get("proxy")) {
+				case "yes" : useProxy = true;
+				case "no" : default: useProxy = false;
+			}
+			
+			// 4 lines above equivalent to:
+			//String useMapString = map.get("proxy");
+			//if (useMapString == null) {
+			//	useProxy = false;
+			//} else {
+			//	if (useMapString.equals("yes")) {
+			//		useProxy = true;
+			//	} else {
+			//		useProxy = false;
+			//	}
+			//}
 			
 			JPanel useServerPanel = new JPanel();
 			useServerPanel.setLayout(new BoxLayout(useServerPanel, BoxLayout.X_AXIS));
@@ -150,11 +165,7 @@ public class ServerConnectionDialog implements ActionListener {
 			okButton.addActionListener(this);
 			serverList.addActionListener(this);
 
-			if (useProxy.equals("yes")) {
-				proxyButton.setSelected(true);
-			} else {
-				proxyButton.setSelected(false);
-			}
+			proxyButton.setSelected(useProxy);
 			
 			if (proxyButton.isSelected()) {
 				proxyNameLabel.setEnabled(true);
@@ -186,18 +197,14 @@ public class ServerConnectionDialog implements ActionListener {
 			proxyPort = proxyPortField.getText();
 			if (proxyPort == null) proxyPort = "";
 
-			if (rememberCheckBox.isSelected()) {
-				remember = "yes";
-			} else {
-				remember = "no";
-			}
+			remember =  rememberCheckBox.isSelected();
 			
 			serverName = data[serverList.getSelectedIndex()];
 			values.put("server", serverName);
-			values.put("proxy", useProxy);
+			values.put("proxy", useProxy ? "yes" : "no");
 			values.put("proxyname", proxyName);
 			values.put("proxyport", proxyPort);
-			values.put("remember", remember);
+			values.put("remember", remember ? "yes" : "no");
 			boolean successful = file.save(values);
 			if (successful) {
 				Log.comment(this, methodName, "saved successfully");
@@ -215,13 +222,13 @@ public class ServerConnectionDialog implements ActionListener {
 			Log.comment(this, methodName, "proxyButton pressed");
 			// Dim / Undim the information below
 			if (proxyButton.isSelected()) {
-				useProxy = "yes";
+				useProxy = true;
 				proxyNameLabel.setEnabled(true);
 				proxyNameField.setEnabled(true);
 				proxyPortLabel.setEnabled(true);
 				proxyPortField.setEnabled(true);
 			} else {
-				useProxy = "no";
+				useProxy = false;
 				proxyNameLabel.setEnabled(false);
 				proxyNameField.setEnabled(false);
 				proxyPortLabel.setEnabled(false);
@@ -240,11 +247,7 @@ public class ServerConnectionDialog implements ActionListener {
 	}
 
 	public boolean useProxy() {
-		if (useProxy.equals("yes")) {
-			return true;
-		} else {
-			return false;
-		}
+		return useProxy;
 	}
 	
 	public String getProxyName() {
