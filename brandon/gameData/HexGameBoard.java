@@ -627,8 +627,7 @@ public abstract class HexGameBoard extends GameBoard {
     	HexSide side = tile.getSide(direction);
 
     	side.addAdjacentTile(tile, oppositeSide(direction));
-    	HexTile tile1 = tile.getAdjacentHex(direction);
-    	if (tile != null) {
+    	if (tile.getAdjacentHex(direction) != null) {
     		side.addAdjacentTile(tile, direction);
     	}
     }

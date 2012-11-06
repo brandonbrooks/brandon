@@ -412,7 +412,7 @@ public abstract class ServerRequest {
 	/** Send a command to the server. Response is returned as a Vector */
 	protected String sendURL_StringResponse(String command) {
 		String methodName = "sendURL_StringResponse(" + command + ")";
-		String response = null;
+		String response = new String();
 
 		String urlString = serverName + servletName + "?command=" + command;
 
@@ -424,7 +424,7 @@ public abstract class ServerRequest {
 			BufferedInputStream in = new BufferedInputStream(conn.getInputStream());
 			int b;
 			while(( b = in.read()) != -1) {
-				response.concat("" + b);
+				response = response.concat("" + b);
 			}
 			in.close();
 

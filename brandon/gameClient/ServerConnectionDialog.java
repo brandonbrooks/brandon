@@ -50,11 +50,11 @@ public class ServerConnectionDialog implements ActionListener {
 			return;
 		} else {
 			// We need to show the dialog
-			String serverName = map.get("server");
+			String serverNameLocal = map.get("server");
 			int selectedServer = 0;
 			for(int i=0; (i < data.length); i++) {
 				String server = data[i];
-				if (server.equals(serverName)) {
+				if (server.equals(serverNameLocal)) {
 					selectedServer = i;
 					Log.comment(this, methodName, "Selected server is "  + i);
 				}
@@ -68,23 +68,12 @@ public class ServerConnectionDialog implements ActionListener {
 			if (proxyPort == null) { proxyPort = ""; }
 			
 			
-			switch((map.get("proxy") == null) ? "no" : map.get("proxy")) {
-				case "yes" : useProxy = true;
-				case "no" : default: useProxy = false;
+			if (map.get("proxy") != null && map.get("proxy").equals("yes")) {
+				useProxy = true;
+			} else {
+				useProxy = false;
 			}
-			
-			// 4 lines above equivalent to:
-			//String useMapString = map.get("proxy");
-			//if (useMapString == null) {
-			//	useProxy = false;
-			//} else {
-			//	if (useMapString.equals("yes")) {
-			//		useProxy = true;
-			//	} else {
-			//		useProxy = false;
-			//	}
-			//}
-			
+
 			JPanel useServerPanel = new JPanel();
 			useServerPanel.setLayout(new BoxLayout(useServerPanel, BoxLayout.X_AXIS));
 			useServerPanel.add(new JLabel("Use server "));
